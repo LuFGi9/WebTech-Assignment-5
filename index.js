@@ -16,8 +16,8 @@ async function initialize() {
     // Beachte dazu die Kommentare an den Funktionen.
     // Nutze `fetch`: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
     // Nutze das "Frankfurter"-API: https://frankfurter.dev/
-    document.write(JSON.stringify(await getCurrencies(), undefined, 2))
-    document.write("<br>")
+    document.write("<br><h3>Tests</h3>")
+    document.write(JSON.stringify(await getCurrencies(), undefined, 2), "<br>")
     document.write("Kurs EUR zu USD:", await convertCurrency("EUR", "USD", 1))
 
     
