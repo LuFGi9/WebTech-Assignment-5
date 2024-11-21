@@ -1,0 +1,18 @@
+#calculator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 800px;
+}
+
+#calculator > * {
+    min-width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1ch;
+}
