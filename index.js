@@ -15,6 +15,7 @@ async function initialize() {
     // AUFGABE 1: Implementiere die Funktionen a) getCurrencies und b) convertCurrency.
     // Beachte dazu die Kommentare an den Funktionen.
     // Nutze `fetch`: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+    // Schau dir evtl. die async-await Syntax aus VL Web Apps I nochmal an
     // Nutze das "Frankfurter"-API: https://frankfurter.dev/
     document.write("<br><h3>Tests</h3>")
     document.write(JSON.stringify(await getCurrencies(), undefined, 2), "<br>")
