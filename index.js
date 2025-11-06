@@ -57,7 +57,7 @@ async function initialize() {
     // b) dann mit `convertCurrency` aus Aufgabe 1 die Währung umwandelt
     // c) und schließlich das Ergebnis im Output-Element anzeigt.
 
-    // d) Füge jetzt noch den Listener zu den Input- und Select-Elementen hinzu.
+    // Fügen Sie jetzt noch den Listener zu den Input- und Select-Elementen hinzu.
 }
 
 initialize()
