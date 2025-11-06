@@ -27,14 +27,14 @@ async function initialize() {
     // Schauen Sie sich evtl. die async-await Syntax aus VL Web Apps I erneut an
     // Nutzen Sie die "Frankfurter"-API: https://api.frankfurter.dev/ (Dokumentation unter https://frankfurter.dev/ verfügbar)
     async function addTestOutputExcercise1() {
-        let testsElement = document.getElementById("tests")
-        let titleElement = document.createElement('h3')
+        const testsElement = document.getElementById("tests")
+        const titleElement = document.createElement('h3')
         titleElement.textContent = "Tests für Aufgabe 1";
 
-        let currencyElement = document.createElement("p");
+        const currencyElement = document.createElement("p");
         currencyElement.textContent = "Währungen: " + JSON.stringify(await getCurrencies(), undefined, 2);
 
-        let conversionElement = document.createElement("p");
+        const conversionElement = document.createElement("p");
         conversionElement.textContent = "Kurs EUR zu USD: " + await convertCurrency("EUR", "USD", 1);
         testsElement.append(titleElement, currencyElement, conversionElement);
     }
