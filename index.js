@@ -26,12 +26,20 @@ async function initialize() {
     // Nutzen Sie `fetch`: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
     // Schauen Sie sich evtl. die async-await Syntax aus VL Web Apps I erneut an
     // Nutzen Sie die "Frankfurter"-API: https://api.frankfurter.dev/ (Dokumentation unter https://frankfurter.dev/ verfügbar)
-    document.write("<br><h3>Tests</h3>")
-    document.write(JSON.stringify(await getCurrencies(), undefined, 2), "<br>")
-    document.write("Kurs EUR zu USD:", await convertCurrency("EUR", "USD", 1))
+    async function addTestOutputExcercise1() {
+        let testsElement = document.getElementById("tests")
+        let titleElement = document.createElement('h3')
+        titleElement.textContent = "Tests für Aufgabe 1";
 
+        let currencyElement = document.createElement("p");
+        currencyElement.textContent = "Währungen: " + JSON.stringify(await getCurrencies(), undefined, 2);
 
-    // AUFGABE 2: Kommentieren Sie zunächst die `document.write`-Aufrufe aus.
+        let conversionElement = document.createElement("p");
+        conversionElement.textContent = "Kurs EUR zu USD: " + await convertCurrency("EUR", "USD", 1);
+        testsElement.append(titleElement, currencyElement, conversionElement);
+    }
+    await addTestOutputExcercise1();
+    // AUFGABE 2: Kommentieren Sie zunächst den Aufruf der Funktion addTestOutputExcercise1() aus.
     // Sorgen Sie nun dafür, dass die beiden Dropdowns mit den möglichen Währungen gefüllt werden.
 
     // a) Mit `getCurrency` aus Aufgabe 1 können Sie die Währungen abrufen.
