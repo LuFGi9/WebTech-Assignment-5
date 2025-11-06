@@ -1,3 +1,3 @@
 # WebTech-Assignment-5
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/LuFGi9/WebTech-Assignment-5)
+Please take a look at the index.html and index.js files for the task description.
