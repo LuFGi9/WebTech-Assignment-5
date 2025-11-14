@@ -42,7 +42,7 @@ async function initialize() {
     // AUFGABE 2: Kommentieren Sie zunächst den Aufruf der Funktion addTestOutputExcercise1() aus.
     // Sorgen Sie nun dafür, dass die beiden Dropdowns mit den möglichen Währungen gefüllt werden.
 
-    // a) Mit `getCurrency` aus Aufgabe 1 können Sie die Währungen abrufen.
+    // a) Mit `getCurrencies` aus Aufgabe 1 können Sie die Währungen abrufen.
 
     // b) Anschließend müssen Sie die beiden Select-Elemente mit entsprechenden DOM-Methoden auswählen (siehe VL Web Apps II)
 
