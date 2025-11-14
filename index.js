@@ -27,7 +27,7 @@ async function initialize() {
     // Schauen Sie sich evtl. die async-await Syntax aus VL Web Apps I erneut an
     // Nutzen Sie die "Frankfurter"-API: https://api.frankfurter.dev/ (Dokumentation unter https://frankfurter.dev/ verfügbar)
     async function addTestOutputExcercise1() {
-        const testsElement = document.getElementById("tests")
+        const testsElement = document.querySelector('#tests');
         const titleElement = document.createElement('h3')
         titleElement.textContent = "Tests für Aufgabe 1";
 
