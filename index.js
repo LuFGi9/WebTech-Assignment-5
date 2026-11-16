@@ -2,14 +2,14 @@ const API_BASE = "https://api.frankfurter.dev/v1"
 
 /**
  * Ruft die Currencies ab, die von https://api.frankfurter.dev unterstützt werden.
- * @returns {Promise<object>} Gibt ein Objekt zurück, dessen Keys die Währungssymbole (z.B. EUR, USD), und dessen Values die Namen der Währungen (z.B. "Euro", "United States Dollar") sind.
+ * @returns {Promise<object>} Gibt ein Objekt zurück, dessen Keys die Währungssymbole (z. B. EUR, USD), und dessen Values die Namen der Währungen (z. B. "Euro", "United States Dollar") sind.
  */
 async function getCurrencies() {
 
 }
 
 /**
- * Wandelt mithilfe von https://api.frankfurter.dev einen bestimmten `amount` einer Währung `from` in den Wert einer Währung `to` um, entsprechend dem aktuellen Wechselkurs. 
+ * Wandelt mithilfe von https://api.frankfurter.dev einen bestimmten `amount` einer Währung `from` in den Wert einer Währung `to` um, entsprechend dem aktuellen Wechselkurs.
  * @param {string} from Ursprungswährung
  * @param {string} to Zielwährung
  * @param {Number} amount
