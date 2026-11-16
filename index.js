@@ -1,4 +1,4 @@
-const API_BASE = "https://api.frankfurter.dev/v1"
+const API_BASE = "https://api.frankfurter.dev/v2"
 
 /**
  * Ruft die Currencies ab, die von https://api.frankfurter.dev unterstützt werden.
